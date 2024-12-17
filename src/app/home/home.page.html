@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true">
+  <div class="background-image"></div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Bienvenido a RegistApp</ion-card-title>
+      </ion-card-header>
+ 
+      <ion-card-content>
+        <div class="login">
+          <img src="./assets/img/Perfil.png" alt="">
+        </div>
+        <ion-input [(ngModel)]="user.usuario" label="Usuario" labelPlacement="floating"
+          placeholder="Ingresar Usuario Registrado"></ion-input>
+        <ion-input label="Contraseña" [(ngModel)]="user.password" type="password" labelPlacement="floating"
+          placeholder="Ingresar contraseña"></ion-input>
+        <ion-label>{{mensaje}}</ion-label>
+        <div *ngIf="barra">
+          <ion-item id="carga">
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </ion-item>
+        </div>
+        <div class="button-group">
+          <ion-button fill="outline" (click)="validar()">Conectar</ion-button>
+          <ion-button fill="outline" [routerLink]="['/recuperar']">Recuperar Contraseña</ion-button>
+          <ion-button fill="outline" [routerLink]="['/registrar']">Registro</ion-button> 
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

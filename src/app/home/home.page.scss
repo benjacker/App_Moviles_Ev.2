@@ -1,0 +1,71 @@
+.background-image {
+  background-image: url('/assets/img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+}
+
+#containerperfil{
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container {
+  text-align: center;
+  position: relative; /* Cambiado de absolute a relative para que el contenedor no cubra la imagen de fondo */
+  padding: 50px; /* Agregado para espaciado */
+}
+
+ion-card {
+  background-color: rgba(255, 184, 0, 0.7); /* Color con 70% de transparencia */
+  border-radius: 5%; /* Bordes redondeados al 5% */
+  --box-shadow: none; /* Opcional: Elimina la sombra para un diseño más limpio */
+}
+
+ion-card-header {
+  --background: transparent;
+}
+
+ion-card-title {
+  color: #000; /* Color del título */
+}
+
+ion-card-content {
+  color: #000; /* Color del contenido */
+}
+
+#container .login img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.button-group {
+  margin-top: 20px; /* Espaciado entre los botones */
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 10px; /* Espacio entre los botones */
+}
+
+ion-button {
+  --color: #204A6B; /* Color de fondo del botón */
+  --background: #204A6B; /* Color de fondo del botón */
+  --color-activated: #204A6B; /* Color de fondo cuando el botón es activado */
+  --color-hover: #204A6B; /* Color de fondo cuando el botón está en hover */
+  --color-focused: #204A6B; /* Color de fondo cuando el botón está enfocado */
+  --color-disabled: #204A6B; /* Color de fondo cuando el botón está deshabilitado */
+  --color: #FFFFFF; /* Color del texto del botón */
+}
+

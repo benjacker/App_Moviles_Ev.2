@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  <div class="background-image"></div>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>REGISTRO</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-label style="color: black;">Nombre de Usuario</ion-label>
+        <ion-input id="user-input" [(ngModel)]="user.username" placeholder="Ingresar un Nombre de Usuario" labelPlacement="floating"></ion-input>
+        <ion-label style="color: black;">Correo Electornico</ion-label>
+        <ion-input id="email-input" [(ngModel)]="user.email" placeholder="Ingrese su Email para registro" labelPlacement="floating"></ion-input>
+        <ion-label style="color: black;">Contraseña</ion-label>
+        <ion-input id="password-input" [(ngModel)]="user.password" type="password" placeholder="Ingresar una Contraseña" labelPlacement="floating"></ion-input>
+        <p class="info-text">Completa los campos para registrarte.</p>
+        <ion-button fill="solid" (click)="register()">Registrar</ion-button>
+        <div *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

@@ -1,0 +1,63 @@
+.background-image {
+    background-image: url('/assets/img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+    
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+  }
+    
+  ion-card {
+    background-color: rgba(255, 184, 0, 0.9); /* Fondo similar al de la imagen */
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+    
+  ion-card-title {
+    font-size: 1.4rem;
+    color: #000;
+    text-transform: uppercase;
+  }
+    
+  .icon-lock img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+  }
+    
+  ion-input {
+    --background: white;
+    --color: #000;
+    margin-top: 10px;
+  }
+    
+  .info-text {
+    font-size: 0.9rem;
+    color: #000;
+    margin-top: 10px;
+  }
+    
+  .button-group {
+    margin-top: 20px;
+  }
+    
+  ion-button {
+    --background: #204A6B; /* Fondo del botón */
+    --color: #fff; /* Texto del botón */
+    width: 100%;
+    --border-radius: 50px; /* Radio del borde para redondear el botón */
+  }
+  

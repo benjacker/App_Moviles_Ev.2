@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <div class="background-image"></div> <!-- Div para la imagen de fondo -->
+  
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>RECUPERAR</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <div class="icon-lock">
+          <img src="./assets/img/candado.png" alt="Lock Icon">
+        </div>
+        <ion-input id="user-input" [(ngModel)]="user.usuario" placeholder="Ingresar Usuario" labelPlacement="floating"></ion-input>
+        <p class="info-text">Introduce tu nombre de usuario y te enviaremos un enlace para restablecer tu contraseña.</p>
+        <ion-button fill="solid" (click)="recuperar()">Recuperar</ion-button>
+        <div *ngIf="mensaje" style="color: red;">{{ mensaje }}</div>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
